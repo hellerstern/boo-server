@@ -23,7 +23,7 @@ app.post('/getImg', (req, res) => {
     const [, extension, data] = matches;
 
     const buffer = Buffer.from(data, 'base64');
-    const filepath = `./imgs/${filename}.${extension}`;
+    const filepath = `./imgs/${filename}`;
 
     fs.writeFileSync(filepath, buffer);
 
