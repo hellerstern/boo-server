@@ -8,7 +8,7 @@ const mysql = require('mysql');
 const app = express();
 
 const pool = mysql.createPool({
-  host: 'localhost',
+  host: '174.138.188.39',
   user: 'root',
   password: '',
   database: 'image',
